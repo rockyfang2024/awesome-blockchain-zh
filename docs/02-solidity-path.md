@@ -16,10 +16,10 @@
 - 🛠️ [Foundry Book](https://book.getfoundry.sh/) — 更快的 Solidity 工具链
 - 📚 [OpenZeppelin 合约库](https://docs.openzeppelin.com/contracts) — 工业级合约实现
 
-## 知识笔记（本仓库内）
+## 知识笔记（本仓库内，存放在 docs/old/）
 
-- 📄 [Solidity 开发环境搭建（VSCode + Hardhat）](../2025-08-03-vscode-hardhat搭建solidity开发环境.md)
-- 📄 [合约开发相关术语](../2025-08-05-合约开发相关术语.md)
+- 📄 [Solidity 开发环境搭建（VSCode + Hardhat）](old/2025-08-03-vscode-hardhat搭建solidity开发环境.md)
+- 📄 [合约开发相关术语](old/2025-08-05-合约开发相关术语.md)
 
 ## 面试题
 
