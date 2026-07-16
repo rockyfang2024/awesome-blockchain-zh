@@ -25,8 +25,10 @@
 | **HTX (Huobi)** | 香港 / 塞舌尔 | 多国 | 老牌，孙宇晨旗下 | 经历多次事件 |
 | **MEXC** | 塞舌尔 | 多国 | 山寨币上线快 | 合约 |
 
-> ⚠️ **重要提示**：以上交易所历史上都有过或大或小的安全事件。
+> ⚠️ **重要提示**：以上传统 CEX 历史上都有过或大或小的安全事件。
 > 详细事件复盘见 [`../events/`](../events/) 目录。
+>
+> 💡 **合规派用户** 如果要重点关注资金安全，可看下面 🇭🇰 [香港持牌交易所](#-香港持牌交易所sfc-vatp-牌照) 章节（HashKey / OSL / Panthera），不在传统 CEX 列表里。
 
 #### 已暴雷 / 倒闭 / 退出市场
 
@@ -38,6 +40,29 @@
 | Mt.Gox | 2014 | 破产，赔付中（持续 10 年） |
 | QuadrigaCX | 2019 | 创始人死亡后倒闭（疑似欺诈） |
 | 抹茶 MXC | 多年前 | 退出中国大陆 |
+
+### 🇭🇰 香港持牌交易所（SFC VATP 牌照）
+
+> **为什么单独列？**：香港证监会（SFC）颁发的"虚拟资产交易平台"牌照（SFC VATP）
+> 是目前亚洲**最严格的合规框架之一**，要求严格 KYC/AML、客户资产隔离、定期审计。
+> 适合：
+> - 注重**资金安全**和**合规**的用户
+> - 香港 / 亚洲传统金融机构客户
+> - 大额 OTC 法币出入金
+
+| 交易所 | 母公司 | 牌照 | 特点 |
+|--------|--------|------|------|
+| **HashKey Exchange** | HashKey Group | 香港证监会 VATP + 保险经纪 | 与多间亚洲银行合作出入金 |
+| **OSL** | BC Technology (港股 0863.HK) | 香港证监会 VATP | 上市公司旗下，老牌合规 |
+| **Panthera** | Panthera Capital | 香港证监会 VATP | 较小，但合规齐备 |
+
+> ⚠️ **数据时效性**：香港证监会 VATP 持牌名单可能随监管动态变化。
+> 当前（2025）已知至少 3 家持牌交易所：**HashKey / OSL / Panthera**。
+> 选择前请到 [SFC 官网](https://www.sfc.hk/) 核实最新状态。
+
+> 💡 注意区分：
+> - **HashKey Exchange**（交易所）≠ **HashKey Capital**（VC 投资）
+> - **OSL**（BC Technology 旗下交易所）≠ OSL 集团其他业务
 
 ### 去中心化交易所（DEX）
 
@@ -117,6 +142,14 @@
 | **Kraken** | kraken.com/careers | 工程、安全 |
 | **Crypto.com** | crypto.com/en/careers | 工程、产品 |
 
+#### 持牌合规交易所
+
+| 公司 | 招聘入口 | 特点 |
+|------|---------|------|
+| **HashKey Exchange** | hashkey.com/careers | 香港证监会 VATP 牌照，合规交易 |
+| **OSL (BC Technology)** | osl.com/careers | 港股上市 (0863.HK)，老牌合规 |
+| **Panthera** | pantheracapital.io | 香港持牌，合规交易 |
+
 #### DeFi / 协议
 
 | 公司 | 招聘入口 | 热门岗位 |
@@ -137,7 +170,7 @@
 | **Pantera Capital** | panteracapital.com/careers | 老牌加密 VC |
 | **Multicoin Capital** | multicoin.capital/careers | 投研并重 |
 | **Dragonfly Capital** | dragonfly.xyz/careers | 跨中美 |
-| **HashKey Capital** | hashkey.com/careers | 香港持牌 |
+| **HashKey Capital** | hashkey.com/careers | **VC**（与 HashKey Exchange 同集团不同业务）|
 | **Animoca Brands** | animocabrands.com/careers | NFT / 游戏 |
 
 #### 基础设施 / L1 / L2
