@@ -46,15 +46,19 @@
 
 ## 🔥 热点事件分析
 
-> 本仓库特色：每次区块链行业发生重大事件（被盗、暴雷、黑客攻击），做深度复盘，提取开发者/用户/协议设计者的学习点。
+> 本仓库特色：每次区块链行业发生重大事件（被盗、暴雷、黑客攻击、行情剧烈波动），做深度复盘，提取开发者/用户/协议设计者/交易者的学习点。
 
-| 日期 | 事件 | 类型 | 金额 | 详细 |
+| 日期 | 事件 | 类型 | 核心 | 详细 |
 |------|------|------|------|------|
-| 2025-02-21 | Bybit 冷钱包被盗 | 🔓 exchange_hack | ~$15 亿 | [→](events/2025/2025-02-21-bybit-hack.md) |
-| 2024-07-18 | WazirX 暴雷 | 🔓 exchange_hack | $2.34 亿 | [→](events/2024/2024-07-18-wazirx-hack.md) |
-| 2024-05-31 | DMM Bitcoin 暴雷 | 💥 exchange_collapse | $3.08 亿 | [→](events/2024/2024-05-31-dmm-bitcoin.md) |
-| 2024-01-xx | Penpie 协议攻击 | 🐛 defi_hack | ~$2700 万 | [→](events/2024/2024-01-penpie-hack.md) |
-| 2022-11-11 | FTX 暴雷 | 💥 exchange_collapse | $80 亿 | [→](events/2022/2022-11-11-ftx-collapse.md) |
+| 2025-02-21 | Bybit 冷钱包被盗 | 🔓 exchange_hack | Safe{Wallet} 前端攻击，~$15 亿 | [→](events/2025/2025-02-21-bybit-hack.md) |
+| 2024-07-18 | WazirX 暴雷 | 🔓 exchange_hack | Bybit 之前的同类预演，$2.34 亿 | [→](events/2024/2024-07-18-wazirx-hack.md) |
+| 2024-05-31 | DMM Bitcoin 暴雷 | 💥 exchange_collapse | 日本持牌交易所倒闭，$3.08 亿 | [→](events/2024/2024-05-31-dmm-bitcoin.md) |
+| 2024-01-xx | Penpie 协议攻击 | 🐛 defi_hack | 闪电贷 + 预言机操纵，~$2700 万 | [→](events/2024/2024-01-penpie-hack.md) |
+| 2022-11-11 | FTX 暴雷 | 💥 exchange_collapse | 挪用客户资金欺诈，$80 亿缺口 | [→](events/2022/2022-11-11-ftx-collapse.md) |
+| 待补充 | 2025-11 币圈大跌 | 📉 market_event | Binance 技术故障等综合因素 | _待你提供信息_ |
+
+> 📝 **新增类型**：除了安全问题（hack / collapse / defi_hack），现在也记录**市场行情类事件**（如交易所故障引发的崩盘、监管政策黑天鹅等）。
+> 模板见 [events/_template/market-event.md](events/_template/market-event.md)。
 
 ### 通用教训
 
