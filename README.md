@@ -55,10 +55,7 @@
 | 2024-05-31 | DMM Bitcoin 暴雷 | 💥 exchange_collapse | 日本持牌交易所倒闭，$3.08 亿 | [→](events/2024/2024-05-31-dmm-bitcoin.md) |
 | 2024-01-xx | Penpie 协议攻击 | 🐛 defi_hack | 闪电贷 + 预言机操纵，~$2700 万 | [→](events/2024/2024-01-penpie-hack.md) |
 | 2022-11-11 | FTX 暴雷 | 💥 exchange_collapse | 挪用客户资金欺诈，$80 亿缺口 | [→](events/2022/2022-11-11-ftx-collapse.md) |
-| 待补充 | 2025-11 币圈大跌 | 📉 market_event | Binance 技术故障等综合因素 | _待你提供信息_ |
-
-> 📝 **新增类型**：除了安全问题（hack / collapse / defi_hack），现在也记录**市场行情类事件**（如交易所故障引发的崩盘、监管政策黑天鹅等）。
-> 模板见 [events/_template/market-event.md](events/_template/market-event.md)。
+| 2025-10-11 | 币圈史上最大爆仓（192 亿美元） | 📉 market_event | 中美关税战 + DeFi 循环贷连环爆仓 | [→](events/2025/2025-10-11-crypto-crash.md) |
 
 ### 通用教训
 
