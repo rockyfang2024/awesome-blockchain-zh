@@ -17,6 +17,8 @@
 | 想做项目 | [💻 推荐开源项目](docs/07-projects.md) |
 | 想跟前沿 | [📰 信息源](docs/08-info-sources.md) |
 | 准备面试 | [🎯 Solidity 面试题](docs/solidity-interview.md) |
+| 找交易所 | [🏦 交易所列表](docs/12-exchanges-referrals.md) |
+| 币圈内推 | [💼 内推资源](docs/12-exchanges-referrals.md) |
 | 看行业事件 | [🔥 热点事件分析](events/) |
 
 ---
@@ -38,6 +40,7 @@
 | [💻 推荐开源项目](docs/07-projects.md) | 按语言分类（Go / Rust / Solidity） |
 | [📰 信息源](docs/08-info-sources.md) | 公众号 / Newsletter / Twitter / 数据平台 |
 | [🇨🇳 中文社区](docs/11-chinese-community.md) | 论坛 / Discord / 媒体 / 会议 |
+| [🏦 交易所 + 内推](docs/12-exchanges-referrals.md) | CEX/DEX 列表 + 币圈公司内推 |
 
 ---
 
