@@ -8,6 +8,7 @@
 
 | 日期 | 事件 | 类型 | 核心 | 详细 |
 |------|------|------|------|------|
+| 2026-09-24 | Bitget 热/温钱包被盗 | 🔓 exchange_hack | 第三方安全设备入侵 + 伪造提现指令，约 $3.875 亿 | [→](2026/2026-09-24-bitget-hack.md) |
 | 2025-02-21 | Bybit 冷钱包被盗 | 🔓 exchange_hack | Safe{Wallet} 前端攻击 | [→](2025/2025-02-21-bybit-hack.md) |
 | 2024-07-18 | WazirX 暴雷 | 🔓 exchange_hack | Bybit 之前的同类预演 | [→](2024/2024-07-18-wazirx-hack.md) |
 | 2024-05-31 | DMM Bitcoin 暴雷 | 💥 exchange_collapse | 日本持牌交易所倒闭 | [→](2024/2024-05-31-dmm-bitcoin.md) |
@@ -21,6 +22,7 @@
 
 ### 🔓 exchange_hack（交易所攻击）
 
+- [Bitget 热/温钱包被盗](2026/2026-09-24-bitget-hack.md) — 第三方安全设备漏洞导致内网凭证失窃，钱包后台提现校验被绕过
 - [Bybit 冷钱包被盗](2025/2025-02-21-bybit-hack.md) — Safe{Wallet} 前端供应链攻击
 - [WazirX 暴雷](2024/2024-07-18-wazirx-hack.md) — Bybit 之前的同类预演
 

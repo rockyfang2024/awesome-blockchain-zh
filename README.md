@@ -75,6 +75,7 @@
 
 | 日期 | 事件 | 类型 | 核心 | 详细 |
 |------|------|------|------|------|
+| 2026-09-24 | Bitget 热/温钱包被盗 | 🔓 exchange_hack | 第三方安全设备入侵 + 伪造提现指令，~$3.875 亿 | [→](events/2026/2026-09-24-bitget-hack.md) |
 | 2025-02-21 | Bybit 冷钱包被盗 | 🔓 exchange_hack | Safe{Wallet} 前端攻击，~$15 亿 | [→](events/2025/2025-02-21-bybit-hack.md) |
 | 2024-07-18 | WazirX 暴雷 | 🔓 exchange_hack | Bybit 之前的同类预演，$2.34 亿 | [→](events/2024/2024-07-18-wazirx-hack.md) |
 | 2024-05-31 | DMM Bitcoin 暴雷 | 💥 exchange_collapse | 日本持牌交易所倒闭，$3.08 亿 | [→](events/2024/2024-05-31-dmm-bitcoin.md) |
@@ -89,6 +90,7 @@
 - **POR 不是 100% 证明** — FTX 当时也有 POR
 - **预言机用单源 = 自杀** — DeFi 协议预言机要冗余
 - **前端是攻击面** — Bybit / WazirX 都因前端 UI 被入侵
+- **内部后台与安全设备也是攻击面** — Bitget 事件显示，密钥未泄露时，伪造后台提现指令仍可能绕过风控
 - **大额资产分散持有** — 别 all-in 一家交易所
 
 详情模板见 [events/ 目录](events/)。
