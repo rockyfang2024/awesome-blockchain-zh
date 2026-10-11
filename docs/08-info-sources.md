@@ -11,6 +11,7 @@
 | Solidity | [官方文档](https://docs.soliditylang.org/) · [发布说明](https://github.com/ethereum/solidity/releases) | 语言、编译器版本与变更 |
 | Bitcoin | [Bitcoin Optech](https://bitcoinops.org/) · [Bitcoin Core 发布页](https://bitcoincore.org/en/releases/) | Bitcoin 技术讨论、升级和实现动态 |
 | Solana | [开发者文档](https://solana.com/docs) · [Solana Releases](https://github.com/anza-xyz/agave/releases) | 开发接口、工具和客户端版本 |
+| Hyperledger Fabric | [官方文档](https://hyperledger-fabric.readthedocs.io/en/latest/) · [Release Notes](https://hyperledger-fabric.readthedocs.io/en/latest/whatsnew.html) | 架构、开发、运维和版本支持信息 |
 | Rust | [Rust Blog](https://blog.rust-lang.org/) · [Rust Edition Guide](https://doc.rust-lang.org/edition-guide/) | 语言发布与迁移说明 |
 
 ## 安全公告与事件调查
@@ -26,6 +27,8 @@
 - [Dune](https://dune.com/) — 可检查 SQL 查询和数据来源的链上分析平台。
 - [L2BEAT](https://l2beat.com/) — Ethereum 扩容系统的风险框架与指标；不应把单一评分当作安全保证。
 - [Bitcoin Optech Newsletter](https://bitcoinops.org/en/newsletters/) — Bitcoin 技术通讯归档。
+- [Hyperledger Fabric 示例](https://github.com/hyperledger/fabric-samples) — 官方 sample 仓库；按文档确认适用版本，示例网络仅适合学习/测试。
+- [The Graph Subgraphs 文档](https://thegraph.com/docs/en/subgraphs/overview/) — Subgraph 数据建模、索引与查询流程；服务能力及支持网络以其最新文档为准。
 
 ## 中文技术资料
 

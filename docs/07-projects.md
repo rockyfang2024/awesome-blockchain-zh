@@ -13,6 +13,9 @@
 | [compound-finance/compound-protocol](https://github.com/compound-finance/compound-protocol) | Solidity | 借贷鼻祖 |
 | [chainlink/contracts](https://github.com/smartcontractkit/chainlink) | Solidity | 预言机 |
 | [foundry-rs/foundry](https://github.com/foundry-rs/foundry) | Rust | Solidity 工具链 |
+| [hyperledger/fabric](https://github.com/hyperledger/fabric) | Go | Fabric Peer、Orderer 等许可链网络组件 |
+| [hyperledger/fabric-samples](https://github.com/hyperledger/fabric-samples) | Go / Java / JavaScript / TypeScript | 官方示例，包括 asset-transfer、测试网络和应用练习 |
+| [hyperledger/fabric-gateway](https://github.com/hyperledger/fabric-gateway) | Go / Java / Node.js | Fabric Gateway 客户端 API；按 Fabric 版本核对兼容性 |
 
 ## 想做项目 / Hackathon 参考
 
