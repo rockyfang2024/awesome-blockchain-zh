@@ -19,7 +19,7 @@
 
 - AMM（Uniswap V2/V3/V4）
 - 借贷（Aave / Compound）
-- 稳定币（MakerDAO / Curve）
+- 稳定币（[机制与实现专题](15-stablecoins.md)，以 Sky / DAI、USDC、USDT 为例）
 - 衍生品（dYdX / GMX）
 - 收益聚合器（Yearn）
 
