@@ -38,6 +38,7 @@
 | [中文社区](docs/11-chinese-community.md) | 技术讨论、问答和开发者活动入口 |
 | [Hyperledger Fabric](docs/12-hyperledger-fabric-path.md) | 联盟链架构、chaincode、组织治理与 Gateway 客户端 |
 | [链上应用基础设施](docs/13-chain-app-infrastructure.md) | RPC、钱包 provider、交易状态与数据索引 |
+| [区块链人物志](docs/14-people.md) | Vitalik、CZ、何一、徐明星、李林的公开经历、社交账号与相关书目 |
 | [Solidity 面试题](docs/solidity-interview.md) | 归档自测题，适合复习，不代替系统学习 |
 
 ## 安全事件复盘
