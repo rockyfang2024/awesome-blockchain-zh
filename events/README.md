@@ -18,6 +18,27 @@
 
 ---
 
+## 安全公司与取证团队报告精选
+
+以下链接按**报告用途**整理，不是机构排名。安全审计/应急取证、智能合约根因分析和链上资金追踪解决的问题不同；链上资金流向分析不能单独证明入侵入口，阶段性取证也不应写成最终结论。金额、归因和统计口径请回到原文核对。
+
+| 团队 | 代表性公开材料 | 主要用途与边界 |
+|------|------|------|
+| [慢雾 SlowMist](https://www.slowmist.com/report/) | [Bitget 事件阶段性调查报告（PDF，团队 GitHub）](https://github.com/slowmist/Knowledge-Base/blob/master/open-report-V2/incident-response/SlowMist%20Investigation%20Progress%20Report%20-%20Bitget_en-us.pdf)；[安全与反洗钱报告库](https://www.slowmist.com/report/) | 事件响应、威胁分析、链上追踪及年度/半年度态势；Bitget 报告是阶段性材料。 |
+| [Mandiant / Google Cloud](https://cloud.google.com/security) | [Bitget Incident Response Status Report（2026-09-30，PDF）](https://img.bgstatic.com/multiLang/events/MFR26-1029_Status_Update_Bitget_0930.pdf) | 主机与企业网络取证；报告说明调查仍在进行，不应据此补写尚未公开的攻击者归因。 |
+| [Beosin](https://beosin.com/resources/?type=7) | [Bitget 事件链上资金追踪](https://vaas.beosin.com/resources/a-comprehensive-on-chain-tracing-of-bitget-security-incident-)；[Bybit 事件追踪分析](https://vaas.beosin.com/resources/the-biggest-theft-of-144-bn-in-the-crypto-market---tracing-analysis-of-bybit-security-incident) | 资金路径、地址和跨链流向；追踪结果不等于主机入侵取证或根因结论。 |
+| [CertiK](https://www.certik.com/) | [Bybit 事件技术分析](https://www.certik.com/blog/bybit-incident-technical-analysis)；[Hack3d 年度安全报告](https://www.certik.com/blog/hack3d-the-web3-security-report-2025) | 交易与合约分析、年度事故统计；统计需注意其事件定义和金额口径。 |
+| [Chainalysis](https://www.chainalysis.com/) | [Bybit 事件与资金流分析](https://www.chainalysis.com/blog/bybit-exchange-hack-february-2025-crypto-security-dprk/)；[Bitget 被盗资金追踪](https://www.chainalysis.com/blog/387m-bitget-theft-2026/) | 链上归集、跨链流转与犯罪归因；归因是分析机构的判断，涉及官方归因时应同时链接执法机构公告。 |
+| [TRM Labs](https://www.trmlabs.com/) | [Bybit 被盗资金追踪与归因](https://www.trmlabs.com/resources/blog/the-bybit-hack-following-north-koreas-largest-exploit) | 链上资金流和威胁组织分析；适合与其他分析团队、执法机构及交易所材料交叉核对。 |
+| [PeckShield](https://peckshield.com/) | [PeckShield 官方研究与安全预警入口](https://peckshield.com/) | 以链上安全预警和研究为主；预警快讯适合发现事件，不能替代完整根因复盘。 |
+| [BlockSec](https://blocksec.com/) | [Balancer V2 攻击根因分析](https://blocksec.com/blog/in-depth-analysis-the-balancer-v2-exploit)；[2025 重大安全事件索引](https://blocksec.com/blog/top-10-awesome-security-incidents-in-2025) | DeFi 合约漏洞和攻击交易分析；适合学习可复现的技术根因，不覆盖所有企业网络取证问题。 |
+| [Verichains](https://github.com/verichains/public-audit-reports) | [Bybit 事件初步调查报告（PDF，GitHub）](https://github.com/verichains/public-audit-reports/blob/main/Bybit%20Incident%20Investigation%20-%20Preliminary%20Report%20v1.0%20%28for%20public%20release%29.pdf) | Bybit 委托的现场初步调查；阅读时注意报告标注的调查范围与初步结论。 |
+| [Sygnia](https://www.sygnia.co/press-release/bybit-investigation-largest-crypto-heist-lazarus-group/) | [Bybit 调查结果发布](https://www.sygnia.co/press-release/bybit-investigation-largest-crypto-heist-lazarus-group/) | 事件响应与数字取证；该页面发布调查发现，详细判断应以其报告及适用范围为准。 |
+
+**使用建议**：复盘单一事件时，先读受影响项目/服务方与受托取证团队的报告，再用至少一家独立安全研究团队核对技术路径，并用链上分析材料追踪资产流向。不同团队可能使用不同估值时间、损失定义和归因置信度；有冲突时保留各自口径，不强行合并成一个数字。
+
+---
+
 ## 📊 按类型分组
 
 ### 🔓 exchange_hack（交易所攻击）
