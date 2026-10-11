@@ -35,4 +35,14 @@
 |------|------|------|
 | Bitcoin and Cryptocurrency Technologies | Princeton | Coursera |
 | Blockchain at Berkeley | UC Berkeley | YouTube |
-| 区块链与加密货币 | 国内多所 | 占位 |
+| Bitcoin and Cryptocurrency Technologies | Princeton | [Coursera 课程](https://www.coursera.org/learn/cryptocurrency)；课程开放情况以平台页面为准 |
+
+## 延伸学习顺序
+
+建议先选定一个生态，再围绕一个问题读文档、源码和测试。不要把协议名称或安全工具清单当成已经掌握该主题；每个练习应记录所用版本、运行环境和未覆盖的假设。
+
+- EVM 合约与测试：见 [Solidity / EVM 学习路径](02-solidity-path.md)。
+- Solana 程序与账户约束：见 [Solana / Rust 学习路径](03-solana-path.md)。
+- 事件攻击链与防护边界：见 [安全事件复盘索引](../events/README.md)。
+
+*最后核对：2026-10-12。*

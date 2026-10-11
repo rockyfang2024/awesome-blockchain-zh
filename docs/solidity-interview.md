@@ -1,8 +1,8 @@
 # Solidity 面试题集（历史归档）
 
 > **归档说明**：此文件保留了仓库历史中的 Solidity 面试题合集。  
-> 仓库主方向已转向"中文区块链学习资源集合"（见 [README.md](../README.md)）。  
-> 这里的内容**不维护、不更新**，仅供查阅。如需 Solidity 系统学习，请回到主 README 的 [🛠️ Solidity 智能合约](../README.md#-solidity-智能合约) 章节。
+> 仓库主方向是中文区块链开发学习路径（见 [README.md](../README.md)）。
+> 这里的内容**不维护、不更新**，仅供查阅。如需 Solidity 系统学习，请查看 [Solidity / EVM 学习路径](02-solidity-path.md)。题目中涉及的 EIP、Gas 和安全实践可能过时，作答前请核对当前规范与工具版本。
 
 ### 一、语言特性和设计模式
 

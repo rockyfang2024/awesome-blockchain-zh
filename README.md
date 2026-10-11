@@ -1,119 +1,64 @@
-# awesome-blockchain-zh
+# 中文区块链开发学习路径
 
-> 🎯 GitHub 上学习区块链最全的中文资源仓库。覆盖 Ethereum / Solana / BTC 等主流 L1/L2，从入门到精通。
+> 面向会编程或正在学编程的中文读者：从理解链上基础，到选择 EVM、Solana 或 Bitcoin 方向，再完成一个可运行、可测试的学习项目。这里只收录能支持这条路径的文档、课程、工具和案例。
 
----
+## 从这里开始
 
-## 🚦 资源质量评分
+| 阶段 | 入口 | 学完后你应该能 |
+|---|---|---|
+| 1. 建立基础概念 | [区块链与链上开发入门](docs/01-getting-started.md) | 解释账户、交易、区块、共识、钱包和 RPC 的作用；知道哪些信息需要自己核实 |
+| 2. 选择开发方向 | [Solidity / EVM](docs/02-solidity-path.md) · [Solana / Rust](docs/03-solana-path.md) · [Bitcoin](docs/04-bitcoin-path.md) | 找到对应的官方文档、工具链和第一份练习 |
+| 3. 补齐工程知识 | [进阶专题](docs/10-advanced.md) · [开源项目源码](docs/07-projects.md) | 阅读合约、客户端或协议代码，并理解安全与测试入口 |
+| 4. 动手验证 | [交互练习与课程](docs/05-videos.md) | 在本地、浏览器沙盒或测试网完成小型练习；不使用真实资产做学习实验 |
+| 5. 从事故学安全 | [事件复盘索引](events/README.md) | 按原始通报和独立技术分析复盘攻击路径、影响与防护边界 |
 
-每个资源都带评分和时间标签，帮你**快速判断**该投入多少时间：
+### 按目标选入口
 
-| 评分 | 含义 |
+- **想做 EVM 合约**：先看 [Solidity 学习路径](docs/02-solidity-path.md)，用 Foundry 或 Remix 编译、测试并部署到本地链。
+- **想做 Solana 程序**：先过 Rust 基础，再跟随 [Solana 学习路径](docs/03-solana-path.md) 完成官方 Quickstart。
+- **想理解 Bitcoin**：从 [Bitcoin 学习路径](docs/04-bitcoin-path.md) 的白皮书、交易结构和 Bitcoin Core 文档开始。
+- **想补安全知识**：从 [进阶专题](docs/10-advanced.md) 和 [事件复盘](events/README.md) 开始；复盘结论会区分官方陈述、独立调查和推断。
+
+## 资源目录
+
+| 主题 | 内容 |
 |---|---|
-| 🌟 **必读** | 不看会错过关键认知 |
-| ✅ **推荐** | 值得花时间看 |
-| 💡 **一般** | 闲暇时翻翻 |
-| ⏸️ **过时** | 之前好，现在被超越 |
+| [入门基础](docs/01-getting-started.md) | 核心概念、链上数据与安全基础 |
+| [Solidity / EVM](docs/02-solidity-path.md) | 官方语言文档、开发工具和合约练习 |
+| [Solana / Rust](docs/03-solana-path.md) | Rust、Solana 官方文档、Anchor 与程序示例 |
+| [Bitcoin](docs/04-bitcoin-path.md) | 白皮书、开发者文档、源码和技术通讯 |
+| [交互练习与课程](docs/05-videos.md) | 有明确链接的课程、沙盒和安全练习 |
+| [书籍与论文](docs/06-books.md) | 基础读物和协议原始资料 |
+| [开源项目](docs/07-projects.md) | 按学习目的选择的协议、客户端与工具源码 |
+| [信息源](docs/08-info-sources.md) | 官方发布、开发者通讯和链上研究数据 |
+| [L1 / L2 参考](docs/09-l1-l2.md) | 架构术语和官方协议文档入口，不做无来源 TPS 排名 |
+| [进阶专题](docs/10-advanced.md) | 密码学、共识、EVM、DeFi 与合约安全 |
+| [中文社区](docs/11-chinese-community.md) | 技术讨论、问答和开发者活动入口 |
+| [Solidity 面试题](docs/solidity-interview.md) | 归档自测题，适合复习，不代替系统学习 |
 
-**时间标签**: ⏱️ <10min / ⏱️ 30min / ⏱️ 1-2h / ⏱️ 1d+
+## 安全事件复盘
 
-> 💡 **仓库原则**：质量 > 数量。每个主章节只放 5-10 个顶级资源，详情见附录。
+| 日期 | 事件 | 攻击/风险主题 | 复盘 |
+|---|---|---|---|
+| 2026-09-24 | Bitget 热/温钱包被盗 | 第三方安全设备与钱包后台权限 | [阅读](events/2026/2026-09-24-bitget-hack.md) |
+| 2025-10-11 | 加密市场大规模清算 | 杠杆、流动性与市场结构 | [阅读](events/2025/2025-10-11-crypto-crash.md) |
+| 2025-02-21 | Bybit 冷钱包被盗 | Safe 前端供应链与签名流程 | [阅读](events/2025/2025-02-21-bybit-hack.md) |
+| 2024-07-18 | WazirX 安全事件 | 多签流程与托管风险 | [阅读](events/2024/2024-07-18-wazirx-hack.md) |
+| 2024-05-31 | DMM Bitcoin 被盗 | 交易所托管与资产缺口 | [阅读](events/2024/2024-05-31-dmm-bitcoin.md) |
+| 2024-01 | Penpie 攻击 | DeFi 权限与市场操纵 | [阅读](events/2024/2024-01-penpie-hack.md) |
+| 2022-11-11 | FTX 崩溃 | 托管、治理与客户资产隔离 | [阅读](events/2022/2022-11-11-ftx-collapse.md) |
 
----
+事件日期、损失金额和归因都可能随调查更新。请以每篇文章的来源和资料边界为准；本文档只用于技术学习，不构成投资、交易或托管建议。
 
-## 🆕 本月推荐（2026-07）
+## 收录标准与维护
 
-- 🌟 ⏱️ 30min | [江卓尔：2025-10 币圈爆仓分析（192 亿美元史上最大）](events/2025/2025-10-11-crypto-crash.md)
-- 🌟 ⏱️ 1d+ | [中本聪《Bitcoin 白皮书》中文版](https://bitcoin.org/files/bitcoin-paper/bitcoin_zh_cn.pdf)
-- ✅ ⏱️ 1-2h | [CryptoZombies Solidity 边玩边学](https://cryptozombies.io/zh/)
+- 优先链接协议/工具官方文档、原始论文和可复现的实践材料；第三方内容注明作者、语言与用途。
+- 新增资源要说明适合谁、解决什么问题，以及建议从哪一页或练习开始。
+- 涉及版本、性能、监管、资金损失或攻击归因的内容必须附一手来源和核对日期；没有证据的说法标为推测或不收录。
+- 失效、过时或有误的条目欢迎通过 Issue 或 Pull Request 提交修正。详见 [贡献指南](CONTRIBUTING.md)。
 
----
+**最近整理：2026-10-12。** 外部链接和生态状态会变化，动态内容以链接目标的最新文档为准。
 
-## 🚀 快速导航
+## License
 
-| 我是... | 推荐入口 |
-|---------|----------|
-| 完全新手 | [📘 入门 101](docs/01-getting-started.md) |
-| 想学 Solidity | [🛠️ Solidity 学习路径](docs/02-solidity-path.md) |
-| 学 Solana / Rust | [☀️ Solana 学习路径](docs/03-solana-path.md) |
-| 学 BTC 底层 | [₿ Bitcoin 学习路径](docs/04-bitcoin-path.md) |
-| 找视频课 | [🎬 视频教程](docs/05-videos.md) |
-| 找书 | [📚 必读书单](docs/06-books.md) |
-| 想做项目 | [💻 推荐开源项目](docs/07-projects.md) |
-| 想跟前沿 | [📰 信息源](docs/08-info-sources.md) |
-| 准备面试 | [🎯 Solidity 面试题](docs/solidity-interview.md) |
-| 找交易所 | [🏦 交易所列表](docs/12-exchanges-referrals.md) |
-| 币圈内推 | [💼 内推资源](docs/12-exchanges-referrals.md) |
-| 看行业事件 | [🔥 热点事件分析](events/) |
-
----
-
-## 📚 资源模块
-
-按主题拆分，详情见 `docs/` 子目录：
-
-| 模块 | 内容 |
-|------|------|
-| [📘 入门 101](docs/01-getting-started.md) | 区块链是什么、公链类型、钱包、Gas、DeFi/NFT/DAO |
-| [🛠️ Solidity](docs/02-solidity-path.md) | 学习路径 + 推荐资源 + 知识笔记 |
-| [☀️ Solana](docs/03-solana-path.md) | Rust 基础 + Anchor 框架 + 推荐教程 |
-| [₿ Bitcoin](docs/04-bitcoin-path.md) | 白皮书 + Mastering Bitcoin + 源码 |
-| [🌐 L1 / L2 生态](docs/09-l1-l2.md) | 9 条 L1 对比 + 5 种 L2 类型 |
-| [🔬 进阶专题](docs/10-advanced.md) | 密码学、共识机制、DeFi 协议、安全审计 |
-| [🎬 视频教程](docs/05-videos.md) | B 站 + YouTube + 在线交互 |
-| [📚 必读书单](docs/06-books.md) | 中文 + 英文 + 论文 |
-| [💻 推荐开源项目](docs/07-projects.md) | 按语言分类（Go / Rust / Solidity） |
-| [📰 信息源](docs/08-info-sources.md) | 公众号 / Newsletter / Twitter / 数据平台 |
-| [🇨🇳 中文社区](docs/11-chinese-community.md) | 论坛 / Discord / 媒体 / 会议 |
-| [🏦 交易所 + 内推](docs/12-exchanges-referrals.md) | CEX/DEX 列表 + 币圈公司内推 |
-
----
-
-## 🔥 热点事件分析
-
-> 本仓库特色：每次区块链行业发生重大事件（被盗、暴雷、黑客攻击、行情剧烈波动），做深度复盘，提取开发者/用户/协议设计者/交易者的学习点。
-
-| 日期 | 事件 | 类型 | 核心 | 详细 |
-|------|------|------|------|------|
-| 2026-09-24 | Bitget 热/温钱包被盗 | 🔓 exchange_hack | 第三方安全设备入侵 + 伪造提现指令，~$3.875 亿 | [→](events/2026/2026-09-24-bitget-hack.md) |
-| 2025-02-21 | Bybit 冷钱包被盗 | 🔓 exchange_hack | Safe{Wallet} 前端攻击，~$15 亿 | [→](events/2025/2025-02-21-bybit-hack.md) |
-| 2024-07-18 | WazirX 暴雷 | 🔓 exchange_hack | Bybit 之前的同类预演，$2.34 亿 | [→](events/2024/2024-07-18-wazirx-hack.md) |
-| 2024-05-31 | DMM Bitcoin 暴雷 | 💥 exchange_collapse | 日本持牌交易所倒闭，$3.08 亿 | [→](events/2024/2024-05-31-dmm-bitcoin.md) |
-| 2024-01-xx | Penpie 协议攻击 | 🐛 defi_hack | 闪电贷 + 预言机操纵，~$2700 万 | [→](events/2024/2024-01-penpie-hack.md) |
-| 2022-11-11 | FTX 暴雷 | 💥 exchange_collapse | 挪用客户资金欺诈，$80 亿缺口 | [→](events/2022/2022-11-11-ftx-collapse.md) |
-| 2025-10-11 | 币圈史上最大爆仓（192 亿美元） | 📉 market_event | 中美关税战 + DeFi 循环贷连环爆仓 | [→](events/2025/2025-10-11-crypto-crash.md) |
-
-### 通用教训
-
-- **not your keys, not your coins** — 大额资产自己保管
-- **多签 + 硬件钱包屏幕核对** — 多签不是银弹，前端 UI 也可能被攻击
-- **POR 不是 100% 证明** — FTX 当时也有 POR
-- **预言机用单源 = 自杀** — DeFi 协议预言机要冗余
-- **前端是攻击面** — Bybit / WazirX 都因前端 UI 被入侵
-- **内部后台与安全设备也是攻击面** — Bitget 事件显示，密钥未泄露时，伪造后台提现指令仍可能绕过风控
-- **大额资产分散持有** — 别 all-in 一家交易所
-
-详情模板见 [events/ 目录](events/)。
-
----
-
-## ⚠️ 数据时效性
-
-本仓库所有数据（事件、链接、价格、TVL）都可能快速变化。任何具体数字请以原始来源为准。
-本仓库**只做学习资源的整理和事件的分析框架**，不提供投资建议。
-
----
-
-## 🚧 贡献
-
-欢迎提交 PR 补充资源或修正错误：
-- 资源真实可用（链接能打开）
-- 中文资源优先
-- 简短说明为什么推荐（一句话）
-- 按类别放到对应模块
-
-[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
-
----
-
-⭐ 如果这个仓库对你有帮助，请 Star 支持！
+文档内容采用 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)；所链接资源各自遵循其原有许可。
