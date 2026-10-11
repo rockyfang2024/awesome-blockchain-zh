@@ -20,6 +20,7 @@
 - AMM（Uniswap V2/V3/V4）
 - 借贷（Aave / Compound）
 - 稳定币（[机制与实现专题](15-stablecoins.md)，以 Sky / DAI、USDC、USDT 为例）
+- 交易撮合（[交易所撮合系统专题](16-matching-engine.md)，订单簿、撮合核心与恢复）
 - 衍生品（dYdX / GMX）
 - 收益聚合器（Yearn）
 

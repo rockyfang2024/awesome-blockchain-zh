@@ -40,6 +40,7 @@
 | [链上应用基础设施](docs/13-chain-app-infrastructure.md) | RPC、钱包 provider、交易状态与数据索引 |
 | [区块链人物志](docs/14-people.md) | Vitalik、CZ、何一、徐明星、李林的公开经历、社交账号与相关书目 |
 | [稳定币与底层实现](docs/15-stablecoins.md) | 稳定机制、发行与赎回、智能合约、预言机、清算和跨链模型 |
+| [交易所撮合系统](docs/16-matching-engine.md) | 订单簿、撮合优先级、低延迟架构、恢复机制与开源实现 |
 | [Solidity 面试题](docs/solidity-interview.md) | 归档自测题，适合复习，不代替系统学习 |
 
 ## 安全事件复盘
