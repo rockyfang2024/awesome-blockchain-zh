@@ -82,13 +82,26 @@ Coinbase 与 AWS 的架构分享把交易系统描述为低延迟、单线程且
 | [exchange-core](https://github.com/exchange-core/exchange-core) | Java 撮合引擎库 | 内存订单簿、账户风控、journal/replay、快照、定点数、Disruptor 多阶段处理和一致性测试入口。 | README 中的微秒级数据为项目自报结果；仓库 TODO 仍列出行情、清算、集群、FIX/REST 网关等缺口。适合学习核心实现，不是完整交易所产品。 |
 | [dYdX Chain v4](https://github.com/dydxprotocol/v4-chain) | 共识链上的衍生品协议 | Go/Cosmos SDK/CometBFT、CLOB 状态、订单验证和匹配操作，可研究共识与撮合的结合。 | 需要理解协议版本、短期/长期订单和链上治理；不同于传统 CEX 的内部引擎。 |
 
+### 技术博客与系统学习文章
+
+| 文章 | 适合了解 | 阅读时注意 |
+|---|---|---|
+| [〖金融科技工程〗撮合引擎实现：撮合算法、价格优先时间优先、状态机、低延迟工程](https://quant67.com/post/fintech/16-matching-engine/16-matching-engine.html)（中文） | 一篇长文覆盖订单簿结构、价格档与 FIFO、确定性/序列号、订单状态机、Go/Rust 示例、事件回放、风控协同、撤单、监控和压测；文末列出 Nasdaq、CME、LMAX、dYdX 等参考资料。 | 是个人技术博客，不是交易所的内部设计披露。其“主流交易所普遍如何实现”等概括和具体参数建议应当作为作者观点，再用官方规则、源码或论文验证。 |
+| [永续合约 09：撮合引擎原理与 Go 实现](https://mritd.com/2025/11/08/perp-matching-engine/)（中文） | 从树/B-Tree/跳表选型开始，给出 Go 的价格—时间优先实现，再讨论分片、队列、事件溯源及 DEX 场景；属于永续合约系列中的撮合专题。 | 很适合跟着代码学习核心算法；Snowflake、机器 ID、无锁扩容等方案是设计讨论，需结合实际排序语义、故障模型和测量结果评估。 |
+| [Building a High-Performance Order Book from Scratch in C++](https://medium.com/@athangkali21/building-a-high-performance-order-book-from-scratch-in-c-0b424efae3f2)（英文，多篇系列） | 路线图从订单簿、价格档和 FIFO，逐步做到限价/市价、撮合、撤改单、L1/L2/L3 行情与性能改进，适合作为边读边写的入门练习。 | 作者个人教程，不代表生产交易所架构；系列仍应以实际已发布文章和仓库代码为准。 |
+| [A journey to build a Microservice Crypto exchange](https://medium.com/@rico.zhang/build-a-microservice-crypto-exchange-in-3-months-92f49f8b7618)（英文，2018） | 一线项目经验角度讨论 RPC 服务、内存撮合、Kafka 输入/输出、重启恢复、重复投递、最终一致性和精度问题。 | 年份较早且是作者对单个项目的复盘；适合读故障和边界经验，不宜把其技术栈或架构当成当前通用最佳实践。 |
+| [Internal Racing Conditions in Crypto Exchanges](https://medium.com/open-crypto-market-data-initiative/internal-racing-conditions-in-crypto-exchanges-cac782f77fd8)（英文） | Open Crypto Trading Initiative 通过下单、撤单与余额复用实验讨论撮合回报和风控余额更新之间的异步竞态，适合补充 API 与用户观察到的系统一致性问题。 | 文章报告的是特定时期、特定交易所 API 的实验观察，不能推断所有交易所都有相同缺陷，也不是撮合引擎完整实现教程。 |
+
+微信公众号检索方面，本次没有找到同时具备连续系统讲解、实现细节和可交叉核验出处的公众号系列。中文博客和公开源码更容易核实；遇到只宣传“源码搭建交易所”、不说明撮合规则、恢复流程、代码许可或压测方法的文章/项目，建议谨慎看待。
+
 ### 建议阅读顺序
 
 1. 先读 Binance Academy 的[撮合引擎入门](https://www.binance.com/en/academy/glossary/matching-engine)，再对照 Nasdaq/CME 规则，分清常见概念和具体 venue 的规则。
-2. 阅读 Coinbase/AWS 架构图，画出从订单网关到成交事件、用户回报、行情和账本的边界。
-3. 阅读 LMAX Disruptor 材料理解事件流水线，再看 exchange-core 的 order book、matching、journal 和 snapshot 代码。
-4. 阅读 CoinTossX 论文并本地运行，理解模拟客户端与撮合服务如何通过消息协议交互。
-5. 最后阅读 dYdX CLOB 源码，对照共识、状态机和排序约束，分析其与中心化订单簿的差异。
+2. 阅读 quant67 长文建立总体框架；再跟 mritd 或 Athang Kali 系列做小型单市场订单簿实现，自己验证部分成交、FIFO、撤单、改单和拒单边界。
+3. 阅读 Coinbase/AWS 架构图，画出从订单网关到成交事件、用户回报、行情和账本的边界。
+4. 阅读 LMAX Disruptor 材料理解事件流水线，再看 exchange-core 的 order book、matching、journal 和 snapshot 代码。
+5. 阅读 CoinTossX 论文并本地运行，理解模拟客户端与撮合服务如何通过消息协议交互。
+6. 最后阅读 dYdX CLOB 源码，对照共识、状态机和排序约束，分析其与中心化订单簿的差异。
 
 做性能对比时应同机、同数据集、同订单类型分布和同正确性要求，分别报告吞吐、p50/p99/p999 延迟、重放能力和过载表现。只看 README 中的“orders per second”数字容易忽略订单簿深度、撤单占比、持久化和网络路径等关键差别。
 
